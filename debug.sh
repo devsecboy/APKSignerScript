@@ -9,7 +9,7 @@ DirPath=$1
 ApkPath=./$1'/dist/'$1'.apk'
 SignedApk=./$1'/dist/'$1'.s.apk'
 Destination=./$1'_signed.apk'
-java -jar apktool b $DirPath
+java -jar apktool.jar b $DirPath
 echo $ApkPath
 java -jar sign.jar $ApkPath
 echo $SignedApk
